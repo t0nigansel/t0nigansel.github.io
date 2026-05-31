@@ -1,0 +1,383 @@
+:root {
+  color-scheme: light;
+  font-family: "Comic Sans MS", "Comic Sans", "Trebuchet MS", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  color: #ffff00;
+  line-height: 1.35;
+  background-color: #008080;
+  background-image:
+    linear-gradient(45deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.16) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.16) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.16) 75%);
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+  background-size: 20px 20px;
+}
+
+a {
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #ff99ff;
+}
+
+a:hover {
+  color: #ffffff;
+  background: #ff00ff;
+}
+
+.top-strip {
+  padding: 0.35rem;
+  color: #000000;
+  background: #ffff00;
+  border-bottom: 6px ridge #ff00ff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.site-header {
+  width: min(980px, calc(100% - 18px));
+  margin: 12px auto 0;
+  padding: 12px;
+  color: #ffffff;
+  background: #000080;
+  border: 8px ridge #c0c0c0;
+  text-align: center;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: clamp(2rem, 7vw, 4.5rem);
+  text-decoration: blink;
+  text-shadow: 4px 4px 0 #ff0000, 8px 8px 0 #000000;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 64px;
+  height: 64px;
+  place-items: center;
+  color: #000000;
+  background: #00ff00;
+  border: 5px outset #ffff00;
+  font-family: "Courier New", monospace;
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  background: #c0c0c0;
+  border: 4px inset #ffffff;
+}
+
+.nav-links a,
+.button {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  color: #0000ee;
+  background: #e0e0e0;
+  border-width: 4px;
+  border-style: outset;
+  border-color: #ffffff #666666 #666666 #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav-links a:active,
+.button:active {
+  border-style: inset;
+}
+
+.hero,
+.section,
+.band,
+.contact-band {
+  width: min(980px, calc(100% - 18px));
+  margin: 12px auto;
+  padding: 14px;
+  background: #000000;
+  border: 8px groove #ff00ff;
+  box-shadow: 12px 12px 0 #202020;
+}
+
+.hero {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  float: right;
+  width: min(42%, 360px);
+  height: 260px;
+  margin: 0 0 12px 18px;
+  background-image: url("assets/quality-workspace.png");
+  background-size: cover;
+  background-position: center;
+  border: 7px ridge #00ff00;
+  filter: contrast(1.6) saturate(1.7);
+}
+
+.hero-media,
+.hero-overlay {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+}
+
+.eyebrow,
+.section-kicker {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 4px 8px;
+  color: #000000;
+  background: #00ff00;
+  border: 3px dashed #ff0000;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 14px;
+  color: #ff00ff;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: clamp(2.4rem, 8vw, 5.8rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+  text-align: center;
+  text-shadow: 3px 3px 0 #ffff00, 6px 6px 0 #0000ff;
+}
+
+h2 {
+  margin-bottom: 14px;
+  color: #00ffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1;
+  text-decoration: underline;
+}
+
+h3 {
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.hero-copy,
+.service-card p,
+.profile-layout p,
+.article-list p,
+.contact-band p {
+  color: #ffff00;
+  font-size: 1.08rem;
+}
+
+.under-construction,
+.visitor-counter {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #000000;
+  background: repeating-linear-gradient(45deg, #ffff00 0 10px, #000000 10px 20px);
+  border: 4px double #ff0000;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+
+.under-construction {
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #000000;
+}
+
+.visitor-counter {
+  display: block;
+  max-width: max-content;
+  color: #00ff00;
+  background: #000000;
+  border-color: #00ff00;
+}
+
+.hero-actions,
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.button.primary {
+  color: #ffffff;
+  background: #ff0000;
+}
+
+.button.secondary {
+  color: #000000;
+  background: #ffff00;
+}
+
+.intro,
+.split,
+.profile-layout,
+.contact-band {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 16px;
+}
+
+.service-grid,
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.service-card,
+.facts div,
+.article-list {
+  padding: 12px;
+  color: #ffffff;
+  background: #800080;
+  border: 6px ridge #ffff00;
+}
+
+.service-card:nth-child(2) {
+  background: #008000;
+  border-color: #ff00ff;
+}
+
+.service-card:nth-child(3) {
+  background: #800000;
+  border-color: #00ffff;
+}
+
+.service-card:nth-child(4) {
+  background: #000080;
+  border-color: #00ff00;
+}
+
+.band {
+  background: #000066;
+  border-color: #00ffff;
+}
+
+.facts {
+  margin: 0;
+}
+
+.facts dt {
+  color: #ffff00;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.facts dd {
+  margin: 4px 0 0;
+  color: #ffffff;
+}
+
+.article-list {
+  font-size: 1.1rem;
+}
+
+.contact-band {
+  background: #400040;
+  border-color: #00ff00;
+}
+
+.site-footer {
+  width: min(980px, calc(100% - 18px));
+  margin: 12px auto 24px;
+  padding: 12px;
+  color: #ffffff;
+  background: #000000;
+  border: 6px ridge #c0c0c0;
+  text-align: center;
+}
+
+.site-footer > * {
+  margin: 0 8px 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 7px;
+  color: #000000;
+  background: #c0c0c0;
+  border: 3px outset #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: bold;
+}
+
+@media (max-width: 760px) {
+  .brand {
+    font-size: 2.35rem;
+    text-shadow: 3px 3px 0 #ff0000, 6px 6px 0 #000000;
+  }
+
+  .brand-mark {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero::before {
+    float: none;
+    display: block;
+    width: 100%;
+    height: 190px;
+    margin: 0 0 14px;
+  }
+
+  .intro,
+  .split,
+  .profile-layout,
+  .contact-band,
+  .service-grid,
+  .facts {
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
