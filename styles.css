@@ -284,6 +284,10 @@ h3 {
   font-size: 1.08rem;
 }
 
+.contact-band .section-kicker {
+  color: #000000;
+}
+
 .under-construction,
 .visitor-counter {
   display: inline-block;
@@ -332,6 +336,11 @@ h3 {
 
 .contact-actions .button {
   flex: 0 0 auto;
+}
+
+.contact-copy {
+  flex: 1 0 100%;
+  margin: 0;
 }
 
 .button.primary {
