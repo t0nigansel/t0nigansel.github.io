@@ -130,6 +130,9 @@
       "cert.all.kicker": "Alle Zertifikate",
       "cert.all.h2": "Chronologisch ungefaehr von frisch bis fossil.",
       "cert.all.p": "Jeder Titel verlinkt auf das jeweilige Zertifikat (PDF).",
+      "cert.badges.kicker": "Badges",
+      "cert.badges.h2": "Kurz-Kurse und Skills, frisch absolviert.",
+      "cert.badges.p": "Badges von DeepLearning.AI und Partnern. Jeder Badge verlinkt auf den Nachweis.",
 
       // articles
       "art.meta.title": "Artikel | Toni Gansel",
@@ -304,6 +307,9 @@
       "cert.all.kicker": "All certificates",
       "cert.all.h2": "Roughly chronological, from fresh to fossil.",
       "cert.all.p": "Each title links to the respective certificate (PDF).",
+      "cert.badges.kicker": "Badges",
+      "cert.badges.h2": "Short courses and skills, freshly completed.",
+      "cert.badges.p": "Badges from DeepLearning.AI and partners. Each badge links to the proof.",
 
       // articles
       "art.meta.title": "Articles | Toni Gansel",
