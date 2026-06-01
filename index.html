@@ -1,38 +1,89 @@
 <!doctype html>
 <html lang="de">
   <head>
+    <!-- === Basis === -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Toni Gansel | AI Engineering, Cybersecurity & Quality Engineering</title>
-    <meta
-      name="description"
-      content="Toni Gansel arbeitet an AI Engineering, Cybersecurity und Quality Engineering mit Claude Code, Codex, Testautomatisierung und Security Thinking."
-    >
-    <meta property="og:title" content="Toni Gansel | AI Engineering, Cybersecurity & Quality Engineering">
-    <meta
-      property="og:description"
-      content="AI Engineering, Cybersecurity und Quality Engineering fuer robuste, nachvollziehbare Software."
-    >
+    <meta name="description" content="Toni Gansel arbeitet an AI Engineering, Cybersecurity und Quality Engineering mit Claude Code, Codex, Testautomatisierung und Security Thinking.">
+    <meta name="author" content="Toni Gansel">
+    <link rel="canonical" href="https://t0nigansel.github.io/">
+
+    <!-- === Favicons === -->
+    <link rel="icon" href="assets/favicon-magenta.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-magenta-48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-magenta-180.png">
+
+    <!-- === Crawler-Steuerung === -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="de">
+
+    <!-- === Open Graph (LinkedIn, Facebook, Slack-Previews) === -->
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/toni-profile.jpeg">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Toni Gansel">
+    <meta property="og:title" content="Toni Gansel | AI Engineering, Cybersecurity & Quality Engineering">
+    <meta property="og:description" content="AI Engineering, Cybersecurity und Quality Engineering fuer robuste, nachvollziehbare Software.">
+    <meta property="og:url" content="https://t0nigansel.github.io/">
+    <meta property="og:image" content="https://t0nigansel.github.io/assets/toni-profile.jpeg">
+    <meta property="og:image:alt" content="Portrait von Toni Gansel">
+
+    <!-- === Twitter / X Card === -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Toni Gansel | AI Engineering, Cybersecurity & Quality Engineering">
+    <meta name="twitter:description" content="AI Engineering, Cybersecurity und Quality Engineering fuer robuste, nachvollziehbare Software.">
+    <meta name="twitter:image" content="https://t0nigansel.github.io/assets/toni-profile.jpeg">
+
+    <!-- === Darstellung === -->
+    <meta name="theme-color" content="#ff00ff">
+
+    <!-- === Retro-Würze (rein dekorativ) === -->
+    <meta name="generator" content="Hand-coded, HTML 4.01-ish, No Frames">
+
+    <!-- === Structured Data (schema.org Person) === -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Toni Gansel",
+      "jobTitle": "Senior Test Engineer (Security, AI)",
+      "url": "https://t0nigansel.github.io/",
+      "image": "https://t0nigansel.github.io/assets/toni-profile.jpeg",
+      "sameAs": [
+        "https://de.linkedin.com/in/toni-gansel-814813245",
+        "https://github.com/t0nigansel"
+      ],
+      "knowsAbout": ["AI Engineering", "Cybersecurity", "Quality Engineering", "LLM Red Teaming"]
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-page="index">
     <div class="top-strip">
-      <marquee behavior="alternate" scrollamount="7">*** Willkommen auf Toni's Homepage !!! AI Engineering | Cybersecurity | Quality Engineering !!! Best viewed with Netscape Navigator 4.0 ***</marquee>
+      <marquee behavior="alternate" scrollamount="7" data-i18n="index.marquee">*** Willkommen auf Toni's Homepage !!! AI Engineering | Cybersecurity | Quality Engineering !!! Best viewed with Netscape Navigator 4.0 ***</marquee>
     </div>
     <header class="site-header" aria-label="Hauptnavigation">
+      <div class="lang-switcher" role="group" aria-label="Sprache / Language">
+        <button type="button" class="lang-btn" data-lang="de" aria-label="Deutsch">
+          <img src="assets/flag-de.svg" alt="Deutsch">
+        </button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">
+          <img src="assets/flag-gb.svg" alt="English">
+        </button>
+      </div>
       <a class="brand" href="#top" aria-label="Toni Gansel">
-        <span class="brand-mark">TG</span>
+        <img class="brand-logo" src="assets/logo-tg.svg" alt="">
         <span>Toni Gansel</span>
       </a>
       <nav class="nav-links">
-        <a href="#leistungen">Leistungen</a>
-        <a href="#profil">Profil</a>
-        <a href="#cv">CV</a>
-        <a href="certifications.html">Zertifikate</a>
-        <a href="articles.html">Artikel</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#leistungen" data-i18n="nav.services">Leistungen</a>
+        <a href="#profil" data-i18n="nav.profile">Profil</a>
+        <a href="#cv" data-i18n="nav.cv">CV</a>
+        <a href="certifications.html" data-i18n="nav.certs">Zertifikate</a>
+        <a href="articles.html" data-i18n="nav.articles">Artikel</a>
+        <a href="bookmarks.html" data-i18n="nav.bookmarks">Lesezeichen</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
       </nav>
     </header>
 
@@ -40,52 +91,52 @@
       <section class="hero" aria-labelledby="hero-title">
         <figure class="hero-photo">
           <img src="assets/toni-profile.jpeg" alt="Portrait von Toni Gansel">
-          <figcaption>AI Engineering, Cybersecurity, Quality Engineering</figcaption>
+          <figcaption data-i18n="index.hero.figcaption">AI Engineering, Cybersecurity, Quality Engineering</figcaption>
         </figure>
         <div class="hero-content">
-          <p class="eyebrow">AI Engineering | Cybersecurity | Quality Engineering</p>
-          <h1 id="hero-title">Ich baue, teste und sichere Software mit AI im Maschinenraum.</h1>
-          <p class="under-construction">+++ Diese Homepage ist permanent im Umbau +++</p>
-          <p class="hero-copy">
+          <p class="eyebrow" data-i18n="index.hero.eyebrow">AI Engineering | Cybersecurity | Quality Engineering</p>
+          <h1 id="hero-title" data-i18n="index.hero.title">Ich baue, teste und sichere Software mit AI im Maschinenraum.</h1>
+          <p class="under-construction" data-i18n="index.hero.underConstruction">+++ Diese Homepage ist permanent im Umbau +++</p>
+          <p class="hero-copy" data-i18n="index.hero.copy">
             Ich arbeite viel mit Claude Code und Codex, verbinde klassische
             Software-Qualitaet mit Security Thinking und mache AI-gestuetzte
             Entwicklung praktisch, pruefbar und kontrollierbar.
           </p>
           <div class="hero-actions" aria-label="Kontaktoptionen">
-            <a class="button primary" href="https://de.linkedin.com/in/toni-gansel-814813245">Auf LinkedIn Kontakt aufnehmen</a>
-            <a class="button secondary" href="articles.html">Artikel lesen</a>
+            <a class="button primary" href="https://de.linkedin.com/in/toni-gansel-814813245" data-i18n="index.hero.ctaPrimary">Auf LinkedIn Kontakt aufnehmen</a>
+            <a class="button secondary" href="articles.html" data-i18n="index.hero.ctaSecondary">Artikel lesen</a>
           </div>
         </div>
       </section>
 
       <section class="section vitals" id="fakten" aria-label="Fakten">
         <div>
-          <p class="section-kicker">Fakten</p>
-          <h2>Auf einen Blick.</h2>
+          <p class="section-kicker" data-i18n="index.facts.kicker">Fakten</p>
+          <h2 data-i18n="index.facts.h2">Auf einen Blick.</h2>
         </div>
         <dl class="facts">
           <div>
-            <dt>Rolle</dt>
-            <dd>Senior Test Engineer</dd>
+            <dt data-i18n="index.facts.role.dt">Rolle</dt>
+            <dd data-i18n="index.facts.role.dd">Senior Test Engineer</dd>
           </div>
           <div>
-            <dt>Firma</dt>
+            <dt data-i18n="index.facts.company.dt">Firma</dt>
             <dd>SPIRIT-TESTING Software &amp; Services GmbH</dd>
           </div>
           <div>
-            <dt>Standort</dt>
+            <dt data-i18n="index.facts.location.dt">Standort</dt>
             <dd>Wolfsburg</dd>
           </div>
           <div>
-            <dt>Erfahrung</dt>
-            <dd>22+ Jahre IT (Entwicklung, Test Engineering, Security, AI)</dd>
+            <dt data-i18n="index.facts.experience.dt">Erfahrung</dt>
+            <dd data-i18n="index.facts.experience.dd">22+ Jahre IT (Entwicklung, Test Engineering, Security, AI)</dd>
           </div>
           <div>
-            <dt>Verfuegbar</dt>
-            <dd>ab in 3 Monaten</dd>
+            <dt data-i18n="index.facts.available.dt">Verfuegbar</dt>
+            <dd data-i18n="index.facts.available.dd">ab in 3 Monaten</dd>
           </div>
           <div>
-            <dt>Kontakt</dt>
+            <dt data-i18n="index.facts.contact.dt">Kontakt</dt>
             <dd><a href="https://de.linkedin.com/in/toni-gansel-814813245">LinkedIn</a></dd>
           </div>
         </dl>
@@ -93,10 +144,10 @@
 
       <section class="section intro" id="leistungen">
         <div>
-          <p class="section-kicker">Schwerpunkte</p>
-          <h2>AI Engineering, Security und Qualitaet zusammen denken.</h2>
+          <p class="section-kicker" data-i18n="index.services.kicker">Schwerpunkte</p>
+          <h2 data-i18n="index.services.h2">AI Engineering, Security und Qualitaet zusammen denken.</h2>
           <p class="visitor-counter">
-            Sie sind Besucher Nr.
+            <span data-i18n="index.services.visitor">Sie sind Besucher Nr.</span>
             <img
               src="https://hits.sh/t0nigansel.github.io.svg?label=&color=ff00ff&labelColor=000000"
               alt="Echter Besucherzaehler fuer diese Website"
@@ -105,29 +156,29 @@
         </div>
         <div class="service-grid">
           <article class="service-card">
-            <h3>AI Engineering</h3>
-            <p>
+            <h3 data-i18n="index.services.card1.h3">AI Engineering</h3>
+            <p data-i18n="index.services.card1.p">
               Praktische Arbeit mit Coding Agents, LLM-Workflows, AI-gestuetzter
               Automatisierung und kontrollierbaren Entwicklungsprozessen.
             </p>
           </article>
           <article class="service-card">
-            <h3>Cybersecurity</h3>
-            <p>
+            <h3 data-i18n="index.services.card2.h3">Cybersecurity</h3>
+            <p data-i18n="index.services.card2.p">
               Threat Modeling, Application Security Testing, Security Reviews und
               realistisches Denken ueber Angriffe, Risiken und Verantwortung.
             </p>
           </article>
           <article class="service-card">
-            <h3>Quality Engineering</h3>
-            <p>
+            <h3 data-i18n="index.services.card3.h3">Quality Engineering</h3>
+            <p data-i18n="index.services.card3.p">
               Teststrategie, Testautomatisierung, API- und E2E-Tests, CI/CD-nahe
               Qualitaetssicherung und sauberes Reporting.
             </p>
           </article>
           <article class="service-card">
-            <h3>Agentic Tooling</h3>
-            <p>
+            <h3 data-i18n="index.services.card4.h3">Agentic Tooling</h3>
+            <p data-i18n="index.services.card4.p">
               Viel Praxis mit Claude Code und Codex: nicht als Spielerei, sondern
               als Werkzeug fuer Analyse, Implementierung, Tests und Dokumentation.
             </p>
@@ -138,9 +189,9 @@
       <section class="band" id="profil">
         <div class="profile-layout">
           <div class="profile-copy">
-            <p class="section-kicker">Profil</p>
-            <h2>AI-naher Quality Engineer mit Security-Hintergrund.</h2>
-            <p>
+            <p class="section-kicker" data-i18n="index.profile.kicker">Profil</p>
+            <h2 data-i18n="index.profile.h2">AI-naher Quality Engineer mit Security-Hintergrund.</h2>
+            <p data-i18n="index.profile.p">
               Ich komme aus Softwareentwicklung, Test Engineering und Security Testing
               und arbeite heute stark an der Schnittstelle zu AI Engineering. Mich
               interessiert, wie Teams mit AI schneller werden, ohne Kontrolle,
@@ -149,16 +200,16 @@
           </div>
           <dl class="facts">
             <div>
-              <dt>Fokus</dt>
-              <dd>AI Engineering, Cybersecurity, Quality Engineering</dd>
+              <dt data-i18n="index.profile.focus.dt">Fokus</dt>
+              <dd data-i18n="index.profile.focus.dd">AI Engineering, Cybersecurity, Quality Engineering</dd>
             </div>
             <div>
-              <dt>Tools</dt>
+              <dt data-i18n="index.profile.tools.dt">Tools</dt>
               <dd>Claude Code, Codex, Python, Java, OWASP ZAP, Burp Suite, Docker, Kubernetes, CI/CD</dd>
             </div>
             <div>
-              <dt>Arbeitsweise</dt>
-              <dd>risikobasiert, security-nah, automatisiert, AI-gestuetzt</dd>
+              <dt data-i18n="index.profile.approach.dt">Arbeitsweise</dt>
+              <dd data-i18n="index.profile.approach.dd">risikobasiert, security-nah, automatisiert, AI-gestuetzt</dd>
             </div>
           </dl>
         </div>
@@ -166,9 +217,9 @@
 
       <section class="section cv-section" id="cv">
         <div>
-          <p class="section-kicker">Curriculum Vitae</p>
-          <h2>Grob genug fuers Web. Konkret genug fuer Vertrauen.</h2>
-          <p class="privacy-note">
+          <p class="section-kicker" data-i18n="index.cv.kicker">Curriculum Vitae</p>
+          <h2 data-i18n="index.cv.h2">Grob genug fuers Web. Konkret genug fuer Vertrauen.</h2>
+          <p class="privacy-note" data-i18n="index.cv.intro">
             Mehr als zwei Jahrzehnte Praxis zwischen Entwicklung, Test Engineering,
             Security Testing und Automatisierung. Heute liegt mein Schwerpunkt dort,
             wo AI-gestuetzte Softwareentwicklung, Cybersecurity und Quality
@@ -177,26 +228,26 @@
         </div>
         <div class="cv-board">
           <article class="cv-box">
-            <h3>Was ich praktisch gemacht habe</h3>
+            <h3 data-i18n="index.cv.box1.h3">Was ich praktisch gemacht habe</h3>
             <ul>
-              <li>KI-gestuetzte Werkzeuge wie Claude Code und Codex fuer Testplanung, Codegenerierung und Auswertung von Testergebnissen erprobt und ihren Mehrwert und ihre Grenzen bewertet (EPA, RISE).</li>
-              <li>Automatisierte API-Tests (SoapUI, Postman, Bruno), E2E-Tests (Cypress, Cucumber) und Regressionstests aufgebaut und in GitLab- und Jenkins-Pipelines integriert (TI-Portal, HSK API Tests, school-SH).</li>
-              <li>Penetrationstests nach OWASP Top 10 mit OWASP ZAP, Burp Suite und Nessus durchgefuehrt und Schwachstellen nach Schweregrad klassifiziert (Pentest, Sogeti NL).</li>
-              <li>Projektweite Teststrategien und Testkonzepte konzipiert, u.a. fuer eine Telematikinfrastruktur-API (TMS) und die Schulverwaltungen School-SH und HSMS.</li>
-              <li>Junior Tester in die Testautomatisierung eingearbeitet (Pair Programming, Code Reviews, TI-Portal) und projektbegleitende Schulungen zu Application Security und Testing gehalten (school-SH).</li>
-              <li>Last- und Performancetests mit JMeter geplant und ausgewertet, verteilt ausgefuehrt auf Kubernetes und ueberwacht mit Prometheus und Grafana (EPA, RISE).</li>
+              <li data-i18n="index.cv.box1.li1">KI-gestuetzte Werkzeuge wie Claude Code und Codex fuer Testplanung, Codegenerierung und Auswertung von Testergebnissen erprobt und ihren Mehrwert und ihre Grenzen bewertet (EPA, RISE).</li>
+              <li data-i18n="index.cv.box1.li2">Automatisierte API-Tests (SoapUI, Postman, Bruno), E2E-Tests (Cypress, Cucumber) und Regressionstests aufgebaut und in GitLab- und Jenkins-Pipelines integriert (TI-Portal, HSK API Tests, school-SH).</li>
+              <li data-i18n="index.cv.box1.li3">Penetrationstests nach OWASP Top 10 mit OWASP ZAP, Burp Suite und Nessus durchgefuehrt und Schwachstellen nach Schweregrad klassifiziert (Pentest, Sogeti NL).</li>
+              <li data-i18n="index.cv.box1.li4">Projektweite Teststrategien und Testkonzepte konzipiert, u.a. fuer eine Telematikinfrastruktur-API (TMS) und die Schulverwaltungen School-SH und HSMS.</li>
+              <li data-i18n="index.cv.box1.li5">Junior Tester in die Testautomatisierung eingearbeitet (Pair Programming, Code Reviews, TI-Portal) und projektbegleitende Schulungen zu Application Security und Testing gehalten (school-SH).</li>
+              <li data-i18n="index.cv.box1.li6">Last- und Performancetests mit JMeter geplant und ausgewertet, verteilt ausgefuehrt auf Kubernetes und ueberwacht mit Prometheus und Grafana (EPA, RISE).</li>
             </ul>
           </article>
 
           <article class="cv-box">
-            <h3>Womit ich arbeite</h3>
-            <p>
+            <h3 data-i18n="index.cv.box2.h3">Womit ich arbeite</h3>
+            <p data-i18n="index.cv.box2.p1">
               Claude Code, Codex, Python, Java, JavaScript, TypeScript, SQL,
               REST-APIs, Selenium, Cypress, Cucumber, Postman, Bruno, JUnit,
               OWASP ZAP, Burp Suite, Nmap, SonarQube, Jenkins, GitLab CI,
               Docker, Kubernetes, Jira und Zephyr Scale.
             </p>
-            <p>
+            <p data-i18n="index.cv.box2.p2">
               JMeter, Prometheus und Grafana habe ich u.a. fuer die Last- und
               Performancetests der Elektronischen Patientenakte eingesetzt,
               verteilt ausgefuehrt auf einem Kubernetes-Cluster.
@@ -204,25 +255,25 @@
           </article>
 
           <article class="cv-box">
-            <h3>Wie ich denke</h3>
+            <h3 data-i18n="index.cv.box3.h3">Wie ich denke</h3>
             <ul>
-              <li>Risikobasiert: Nicht alles testen, sondern das Richtige zuerst.</li>
-              <li>AI-praktisch: Agents muessen helfen, aber pruefbar und steuerbar bleiben.</li>
-              <li>Automatisiert: Tests und Workflows sollen wiederholbar, wartbar und pipelinefaehig sein.</li>
-              <li>Sicherheitsnah: Qualitaet endet nicht bei gruener UI.</li>
-              <li>Messbar: Performance, Stabilitaet und Befunde brauchen Daten statt Bauchgefuehl.</li>
-              <li>Teamnah: Gute QA hilft Entwicklung, Produkt und Betrieb gleichzeitig.</li>
+              <li data-i18n="index.cv.box3.li1">Risikobasiert: Nicht alles testen, sondern das Richtige zuerst.</li>
+              <li data-i18n="index.cv.box3.li2">AI-praktisch: Agents muessen helfen, aber pruefbar und steuerbar bleiben.</li>
+              <li data-i18n="index.cv.box3.li3">Automatisiert: Tests und Workflows sollen wiederholbar, wartbar und pipelinefaehig sein.</li>
+              <li data-i18n="index.cv.box3.li4">Sicherheitsnah: Qualitaet endet nicht bei gruener UI.</li>
+              <li data-i18n="index.cv.box3.li5">Messbar: Performance, Stabilitaet und Befunde brauchen Daten statt Bauchgefuehl.</li>
+              <li data-i18n="index.cv.box3.li6">Teamnah: Gute QA hilft Entwicklung, Produkt und Betrieb gleichzeitig.</li>
             </ul>
           </article>
 
           <article class="cv-box">
-            <h3>Nachweise ohne Lebenslauf-Krimi</h3>
-            <p>
+            <h3 data-i18n="index.cv.box4.h3">Nachweise ohne Lebenslauf-Krimi</h3>
+            <p data-i18n="index.cv.box4.p1">
               Zertifizierungen und Weiterbildungen in Softwaretesting, Scrum,
               Cybersecurity, Application Security, Generative AI, AI Agents,
               LLM Red Teaming, Azure AI, Data Engineering und UX.
             </p>
-            <p>
+            <p data-i18n="index.cv.box4.p2">
               Dazu Erfahrung mit ISTQB-, OWASP- und BSI-nahen Vorgehensweisen,
               plus viele Jahre Praxis zwischen Entwicklung, Testmanagement,
               Security Testing, Performance Engineering und DevSecOps.
@@ -233,9 +284,9 @@
 
       <!-- ============ GREATEST HITS ============ -->
       <section class="section greatest-hits" id="greatest-hits">
-        <h2>&gt;&gt;&gt; Systeme, die nicht ausfallen duerfen &lt;&lt;&lt;</h2>
+        <h2 data-i18n="index.hits.h2">&gt;&gt;&gt; Systeme, die nicht ausfallen duerfen &lt;&lt;&lt;</h2>
         <p class="subtitle">
-          <marquee behavior="alternate" scrollamount="3">
+          <marquee behavior="alternate" scrollamount="3" data-i18n="index.hits.subtitle">
             *** Kritische Infrastruktur. Echte Last. Echte Konsequenzen. ***
           </marquee>
         </p>
@@ -243,30 +294,30 @@
         <div class="table-wrap">
           <table class="hits" border="1" cellpadding="6" cellspacing="0">
             <tr>
-              <th>System</th>
-              <th>Was es traegt</th>
-              <th>Was ich gemacht habe</th>
+              <th data-i18n="index.hits.th.system">System</th>
+              <th data-i18n="index.hits.th.carries">Was es traegt</th>
+              <th data-i18n="index.hits.th.did">Was ich gemacht habe</th>
             </tr>
             <tr>
               <td><b>Elektronische Patientenakte (ePA)</b></td>
-              <td>Gesundheitsdaten aller gesetzlich Versicherten in DE</td>
-              <td>Last- und Performancetests (JMeter, Kubernetes, Prometheus/Grafana)</td>
+              <td data-i18n="index.hits.row1.carries">Gesundheitsdaten aller gesetzlich Versicherten in DE</td>
+              <td data-i18n="index.hits.row1.did">Last- und Performancetests (JMeter, Kubernetes, Prometheus/Grafana)</td>
             </tr>
             <tr>
               <td><b>Cell Broadcast</b></td>
-              <td>Bundesweites Warnsystem fuer Katastrophen und Gefahrenlagen</td>
-              <td>Test Manager: Validierung der XML-Transformationen unter grossen Datenmengen, Tests mit fehlenden, manipulierten und typfremden Werten</td>
+              <td data-i18n="index.hits.row2.carries">Bundesweites Warnsystem fuer Katastrophen und Gefahrenlagen</td>
+              <td data-i18n="index.hits.row2.did">Test Manager: Validierung der XML-Transformationen unter grossen Datenmengen, Tests mit fehlenden, manipulierten und typfremden Werten</td>
             </tr>
             <tr>
               <td><b>ALLEGRO</b></td>
-              <td>Berechnung der Grundsicherung (ALG II) der Bundesagentur fuer Arbeit</td>
-              <td>Tests zu Sicherheit, Performance, Usability und Barrierefreiheit</td>
+              <td data-i18n="index.hits.row3.carries">Berechnung der Grundsicherung (ALG II) der Bundesagentur fuer Arbeit</td>
+              <td data-i18n="index.hits.row3.did">Tests zu Sicherheit, Performance, Usability und Barrierefreiheit</td>
             </tr>
           </table>
         </div>
 
         <p class="kunden">
-          <b>Auftraggeber u.a.:</b>
+          <b data-i18n="index.hits.clientsLabel">Auftraggeber u.a.:</b>
           Volkswagen &middot; Schulbehoerden Hamburg &amp; Schleswig-Holstein &middot;
           Bundesagentur fuer Arbeit &middot; Deutsche Bundesbank
         </p>
@@ -274,44 +325,44 @@
 
       <section class="section split" id="zertifikate">
         <div>
-          <p class="section-kicker">Zertifizierungen</p>
-          <h2>AI, Security, Testing und ein bisschen Papierkrieg.</h2>
+          <p class="section-kicker" data-i18n="index.certsTeaser.kicker">Zertifizierungen</p>
+          <h2 data-i18n="index.certsTeaser.h2">AI, Security, Testing und ein bisschen Papierkrieg.</h2>
         </div>
         <div class="article-list teaser-list">
-          <p>
+          <p data-i18n="index.certsTeaser.p">
             Die Liste reicht von Claude Code, Coding Agents und LLM Red Teaming
             bis zu ISTQB, Secure Software Engineering, Cybersecurity und Scrum.
           </p>
-          <a class="button primary" href="certifications.html">Alle Zertifikate anzeigen</a>
+          <a class="button primary" href="certifications.html" data-i18n="index.certsTeaser.btn">Alle Zertifikate anzeigen</a>
         </div>
       </section>
 
       <section class="section split article-teaser" id="artikel">
         <div>
-          <p class="section-kicker">Artikel</p>
-          <h2>Texte zu AI, Security, Gesellschaft und Softwarequalitaet.</h2>
+          <p class="section-kicker" data-i18n="index.articlesTeaser.kicker">Artikel</p>
+          <h2 data-i18n="index.articlesTeaser.h2">Texte zu AI, Security, Gesellschaft und Softwarequalitaet.</h2>
         </div>
         <div class="article-list teaser-list">
-          <p>
+          <p data-i18n="index.articlesTeaser.p">
             Die komplette Linkliste liegt jetzt auf einer eigenen Seite: LinkedIn-Artikel,
             Fachartikel-PDFs aus GitHub und alles, was irgendwo dazwischen passiert ist.
           </p>
-          <a class="button primary" href="articles.html">Alle Artikel anzeigen</a>
+          <a class="button primary" href="articles.html" data-i18n="index.articlesTeaser.btn">Alle Artikel anzeigen</a>
         </div>
       </section>
 
       <section class="contact-band" id="kontakt">
         <div>
-          <p class="section-kicker">Kontakt</p>
-          <h2>Lust auf AI Engineering mit Bodenhaftung?</h2>
-          <p>
+          <p class="section-kicker" data-i18n="index.contact.kicker">Kontakt</p>
+          <h2 data-i18n="index.contact.h2">Lust auf AI Engineering mit Bodenhaftung?</h2>
+          <p data-i18n="index.contact.p">
             Fuer AI Engineering, Cybersecurity, Quality Engineering oder den
             pragmatischen Einsatz von Claude Code und Codex freue ich mich ueber
             eine Nachricht auf LinkedIn.
           </p>
         </div>
         <div class="contact-actions">
-          <a class="button primary" href="https://de.linkedin.com/in/toni-gansel-814813245">Auf LinkedIn schreiben</a>
+          <a class="button primary" href="https://de.linkedin.com/in/toni-gansel-814813245" data-i18n="index.contact.btnPrimary">Auf LinkedIn schreiben</a>
           <a class="button secondary" href="https://github.com/t0nigansel">GitHub</a>
         </div>
       </section>
@@ -323,5 +374,6 @@
       <span class="badge">No Frames!</span>
       <a href="https://github.com/t0nigansel/tgansel.github.io">GitHub Repository</a>
     </footer>
+    <script src="i18n.js"></script>
   </body>
 </html>

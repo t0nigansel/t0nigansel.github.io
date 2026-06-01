@@ -1,41 +1,81 @@
 <!doctype html>
 <html lang="de">
   <head>
+    <!-- === Basis === -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zertifizierungen | Toni Gansel</title>
     <meta name="description" content="Zertifizierungen von Toni Gansel zu AI Engineering, Cybersecurity, Testing, Scrum, UX und Data.">
+    <meta name="author" content="Toni Gansel">
+    <link rel="canonical" href="https://t0nigansel.github.io/certifications.html">
+
+    <!-- === Favicons === -->
+    <link rel="icon" href="assets/favicon-magenta.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-magenta-48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-magenta-180.png">
+
+    <!-- === Crawler-Steuerung === -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="de">
+
+    <!-- === Open Graph (LinkedIn, Facebook, Slack-Previews) === -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Toni Gansel">
     <meta property="og:title" content="Zertifizierungen | Toni Gansel">
     <meta property="og:description" content="AI, Cybersecurity, Testing und Quality Engineering Zertifizierungen.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/toni-profile.jpeg">
+    <meta property="og:url" content="https://t0nigansel.github.io/certifications.html">
+    <meta property="og:image" content="https://t0nigansel.github.io/assets/toni-profile.jpeg">
+    <meta property="og:image:alt" content="Portrait von Toni Gansel">
+
+    <!-- === Twitter / X Card === -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zertifizierungen | Toni Gansel">
+    <meta name="twitter:description" content="AI, Cybersecurity, Testing und Quality Engineering Zertifizierungen.">
+    <meta name="twitter:image" content="https://t0nigansel.github.io/assets/toni-profile.jpeg">
+
+    <!-- === Darstellung === -->
+    <meta name="theme-color" content="#ff00ff">
+
+    <!-- === Retro-Würze (rein dekorativ) === -->
+    <meta name="generator" content="Hand-coded, HTML 4.01-ish, No Frames">
+
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-page="cert">
     <div class="top-strip">
-      <marquee behavior="alternate" scrollamount="7">*** Zertifikate !!! Scheine !!! Badges !!! Bitte nicht laminieren ***</marquee>
+      <marquee behavior="alternate" scrollamount="7" data-i18n="cert.marquee">*** Zertifikate !!! Scheine !!! Badges !!! Bitte nicht laminieren ***</marquee>
     </div>
     <header class="site-header" aria-label="Hauptnavigation">
+      <div class="lang-switcher" role="group" aria-label="Sprache / Language">
+        <button type="button" class="lang-btn" data-lang="de" aria-label="Deutsch">
+          <img src="assets/flag-de.svg" alt="Deutsch">
+        </button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">
+          <img src="assets/flag-gb.svg" alt="English">
+        </button>
+      </div>
       <a class="brand" href="index.html" aria-label="Toni Gansel">
-        <span class="brand-mark">TG</span>
+        <img class="brand-logo" src="assets/logo-tg.svg" alt="">
         <span>Toni Gansel</span>
       </a>
       <nav class="nav-links">
-        <a href="index.html#leistungen">Leistungen</a>
-        <a href="index.html#profil">Profil</a>
-        <a href="index.html#cv">CV</a>
-        <a href="certifications.html">Zertifikate</a>
-        <a href="articles.html">Artikel</a>
-        <a href="index.html#kontakt">Kontakt</a>
+        <a href="index.html#leistungen" data-i18n="nav.services">Leistungen</a>
+        <a href="index.html#profil" data-i18n="nav.profile">Profil</a>
+        <a href="index.html#cv" data-i18n="nav.cv">CV</a>
+        <a href="certifications.html" data-i18n="nav.certs">Zertifikate</a>
+        <a href="articles.html" data-i18n="nav.articles">Artikel</a>
+        <a href="bookmarks.html" data-i18n="nav.bookmarks">Lesezeichen</a>
+        <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
       </nav>
     </header>
 
     <main>
       <section class="section article-page">
         <div>
-          <p class="section-kicker">Zertifizierungen</p>
-          <h1>AI, Security, Testing und Quality Engineering in Papierform.</h1>
-          <p class="hero-copy">
+          <p class="section-kicker" data-i18n="cert.intro.kicker">Zertifizierungen</p>
+          <h1 data-i18n="cert.intro.h1">AI, Security, Testing und Quality Engineering in Papierform.</h1>
+          <p class="hero-copy" data-i18n="cert.intro.p">
             Eine vollstaendige Liste meiner Zertifizierungen und Weiterbildungen.
             Die Mischung ist Absicht: moderne AI-Engineering-Praxis auf einem
             Fundament aus Security, Testing und Softwarequalitaet.
@@ -45,8 +85,8 @@
 
       <section class="section cert-section">
         <div>
-          <p class="section-kicker">Schwerpunkte</p>
-          <h2>Die grobe Landkarte.</h2>
+          <p class="section-kicker" data-i18n="cert.focus.kicker">Schwerpunkte</p>
+          <h2 data-i18n="cert.focus.h2">Die grobe Landkarte.</h2>
         </div>
         <div class="cert-summary">
           <span>AI Engineering</span>
@@ -63,9 +103,9 @@
 
       <section class="section cert-section">
         <div>
-          <p class="section-kicker">Alle Zertifikate</p>
-          <h2>Chronologisch ungefaehr von frisch bis fossil.</h2>
-          <p class="hero-copy">Jeder Titel verlinkt auf das jeweilige Zertifikat (PDF).</p>
+          <p class="section-kicker" data-i18n="cert.all.kicker">Alle Zertifikate</p>
+          <h2 data-i18n="cert.all.h2">Chronologisch ungefaehr von frisch bis fossil.</h2>
+          <p class="hero-copy" data-i18n="cert.all.p">Jeder Titel verlinkt auf das jeweilige Zertifikat (PDF).</p>
         </div>
         <div class="cert-grid">
           <article class="cert-card"><h3><a href="https://raw.githubusercontent.com/t0nigansel/certificates/main/AiPromptingForEveryone.png" target="_blank" rel="noopener">AI Prompting for Everyone</a></h3><p>DeepLearning.AI &middot; Issued May 2026</p></article>
@@ -109,7 +149,8 @@
       <span>&copy; 2026 Toni Gansel</span>
       <span class="badge">Certified!</span>
       <span class="badge">Many Badges!</span>
-      <a href="index.html">Zurueck zur Startseite</a>
+      <a href="index.html" data-i18n="footer.backHome">Zurueck zur Startseite</a>
     </footer>
+    <script src="i18n.js"></script>
   </body>
 </html>

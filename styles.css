@@ -1,6 +1,12 @@
 :root {
   color-scheme: light;
   font-family: "Comic Sans MS", "Comic Sans", "Trebuchet MS", Arial, sans-serif;
+  --bg: #000000;
+  --mag: #ff00ff;
+  --lime: #39ff14;
+  --cyan: #00e5ff;
+  --txt: #e6e6e6;
+  --card-bg: #0b1020;
 }
 
 * {
@@ -51,13 +57,42 @@ a:hover {
 }
 
 .site-header {
+  position: relative;
   width: min(980px, calc(100% - 18px));
   margin: 12px auto 0;
   padding: 12px;
   color: #ffffff;
-  background: #000080;
-  border: 8px ridge #c0c0c0;
+  background: var(--bg);
+  border: 2px solid var(--mag);
   text-align: center;
+}
+
+.lang-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.lang-btn {
+  padding: 3px;
+  background: #c0c0c0;
+  border: 4px outset #ffffff;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.lang-btn[aria-pressed="true"] {
+  background: #ffff00;
+  border-style: inset;
+}
+
+.lang-btn img {
+  display: block;
+  width: 30px;
+  height: 20px;
+  border: 1px solid #000000;
 }
 
 .brand {
@@ -72,16 +107,14 @@ a:hover {
   text-shadow: 4px 4px 0 #ff0000, 8px 8px 0 #000000;
 }
 
-.brand-mark {
-  display: inline-grid;
-  width: 64px;
-  height: 64px;
-  place-items: center;
-  color: #000000;
-  background: #00ff00;
-  border: 5px outset #ffff00;
-  font-family: "Courier New", monospace;
-  font-size: 1.1rem;
+.brand:visited {
+  color: #ffffff;
+}
+
+.brand-logo {
+  display: block;
+  height: 56px;
+  width: auto;
 }
 
 .nav-links {
@@ -90,11 +123,10 @@ a:hover {
   justify-content: center;
   gap: 8px;
   padding: 8px;
-  background: #c0c0c0;
-  border: 4px inset #ffffff;
+  background: var(--bg);
+  border: 2px solid var(--mag);
 }
 
-.nav-links a,
 .button {
   display: inline-block;
   padding: 0.45rem 0.8rem;
@@ -109,9 +141,34 @@ a:hover {
   text-decoration: underline;
 }
 
-.nav-links a:active,
 .button:active {
   border-style: inset;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  color: var(--mag);
+  background: #0a0a0a;
+  border: 1px solid #333333;
+  border-left: 4px solid var(--mag);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--lime);
+  border-color: var(--lime);
+  background: var(--bg);
+}
+
+body[data-page="cert"] .nav-links a[href="certifications.html"],
+body[data-page="art"] .nav-links a[href="articles.html"],
+body[data-page="book"] .nav-links a[href="bookmarks.html"] {
+  color: var(--lime);
+  border-left-color: var(--lime);
 }
 
 .hero,
@@ -304,7 +361,14 @@ h3 {
 }
 
 .service-card,
-.facts div,
+.facts div {
+  padding: 12px;
+  color: var(--txt);
+  background: var(--card-bg);
+  border: 2px solid #ffff00;
+  transition: border-color 0.15s;
+}
+
 .article-list {
   padding: 12px;
   color: #ffffff;
@@ -312,19 +376,41 @@ h3 {
   border: 6px ridge #ffff00;
 }
 
+.service-card h3 {
+  color: #ffff00;
+}
+
+.service-card p {
+  color: var(--txt);
+}
+
 .service-card:nth-child(2) {
-  background: #008000;
-  border-color: #ff00ff;
+  border-color: var(--mag);
+}
+
+.service-card:nth-child(2) h3 {
+  color: var(--mag);
 }
 
 .service-card:nth-child(3) {
-  background: #800000;
-  border-color: #00ffff;
+  border-color: var(--cyan);
+}
+
+.service-card:nth-child(3) h3 {
+  color: var(--cyan);
 }
 
 .service-card:nth-child(4) {
-  background: #000080;
-  border-color: #00ff00;
+  border-color: var(--lime);
+}
+
+.service-card:nth-child(4) h3 {
+  color: var(--lime);
+}
+
+.service-card:hover,
+.facts div:hover {
+  border-color: var(--lime);
 }
 
 .cv-section {
@@ -467,7 +553,7 @@ h3 {
 
 .facts dd {
   margin: 4px 0 0;
-  color: #ffffff;
+  color: var(--txt);
 }
 
 .article-list {
@@ -621,14 +707,19 @@ h3 {
 }
 
 @media (max-width: 760px) {
+  .lang-switcher {
+    position: static;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
   .brand {
     font-size: 2.35rem;
     text-shadow: 3px 3px 0 #ff0000, 6px 6px 0 #000000;
   }
 
-  .brand-mark {
-    width: 48px;
-    height: 48px;
+  .brand-logo {
+    height: 40px;
   }
 
   .hero,

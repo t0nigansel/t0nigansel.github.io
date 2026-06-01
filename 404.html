@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- === Basis === -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 | Toni Gansel</title>
+    <meta name="description" content="Seite nicht gefunden.">
+    <meta name="author" content="Toni Gansel">
+
+    <!-- === Favicons === -->
+    <link rel="icon" href="/assets/favicon-magenta.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-magenta-48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-magenta-180.png">
+
+    <!-- === Crawler-Steuerung === -->
+    <meta name="robots" content="noindex, follow">
+    <meta name="language" content="de">
+
+    <!-- === Darstellung === -->
+    <meta name="theme-color" content="#ff00ff">
+
+    <!-- === Retro-Würze (rein dekorativ) === -->
+    <meta name="generator" content="Hand-coded, HTML 4.01-ish, No Frames">
+
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body data-page="e404">
+    <div class="top-strip">
+      <marquee behavior="alternate" scrollamount="7" data-i18n="e404.marquee">*** ERROR 404 !!! Datei nicht gefunden !!! Vielleicht hat ein Bot sie gefressen !!! Best viewed with Netscape Navigator 4.0 ***</marquee>
+    </div>
+    <header class="site-header" aria-label="Hauptnavigation">
+      <div class="lang-switcher" role="group" aria-label="Sprache / Language">
+        <button type="button" class="lang-btn" data-lang="de" aria-label="Deutsch">
+          <img src="/assets/flag-de.svg" alt="Deutsch">
+        </button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">
+          <img src="/assets/flag-gb.svg" alt="English">
+        </button>
+      </div>
+      <a class="brand" href="/" aria-label="Toni Gansel">
+        <img class="brand-logo" src="/assets/logo-tg.svg" alt="">
+        <span>Toni Gansel</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/index.html#leistungen" data-i18n="nav.services">Leistungen</a>
+        <a href="/index.html#profil" data-i18n="nav.profile">Profil</a>
+        <a href="/index.html#cv" data-i18n="nav.cv">CV</a>
+        <a href="/certifications.html" data-i18n="nav.certs">Zertifikate</a>
+        <a href="/articles.html" data-i18n="nav.articles">Artikel</a>
+        <a href="/bookmarks.html" data-i18n="nav.bookmarks">Lesezeichen</a>
+        <a href="/index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section article-page">
+        <div>
+          <p class="section-kicker" data-i18n="e404.kicker">Fehler 404</p>
+          <h1>404</h1>
+          <h2 data-i18n="e404.heading">File not found.</h2>
+          <p class="under-construction" data-i18n="e404.underConstruction">+++ Diese Seite ist permanent im Umbau +++</p>
+          <p class="hero-copy" data-i18n="e404.copy">
+            Die angeforderte Datei existiert nicht, wurde umbenannt oder ist
+            irgendwo zwischen zwei Commits verloren gegangen.
+          </p>
+          <p>
+            <a class="button primary" href="/" data-i18n="footer.backHome">Zurueck zur Startseite</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Toni Gansel</span>
+      <span class="badge">Error 404</span>
+      <span class="badge">No Frames!</span>
+      <a href="/" data-i18n="footer.backHome">Zurueck zur Startseite</a>
+    </footer>
+    <script src="/i18n.js"></script>
+  </body>
+</html>
