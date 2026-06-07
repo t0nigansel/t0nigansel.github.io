@@ -80,6 +80,7 @@
         <a href="#leistungen" data-i18n="nav.services">Leistungen</a>
         <a href="#profil" data-i18n="nav.profile">Profil</a>
         <a href="#cv" data-i18n="nav.cv">CV</a>
+        <a href="#werdegang" data-i18n="nav.timeline">Werdegang</a>
         <a href="certifications.html" data-i18n="nav.certs">Zertifikate</a>
         <a href="articles.html" data-i18n="nav.articles">Artikel</a>
         <a href="bookmarks.html" data-i18n="nav.bookmarks">Lesezeichen</a>
@@ -91,28 +92,37 @@
       <section class="hero" aria-labelledby="hero-title">
         <figure class="hero-photo">
           <img src="assets/toni-profile.jpeg" alt="Portrait von Toni Gansel">
-          <figcaption data-i18n="index.hero.figcaption">AI Engineering, Cybersecurity, Quality Engineering</figcaption>
+          <figcaption data-i18n="index.hero.figcaption">AI Engineering · Cybersecurity · Quality Engineering</figcaption>
         </figure>
         <div class="hero-content">
-          <p class="eyebrow" data-i18n="index.hero.eyebrow">AI Engineering | Cybersecurity | Quality Engineering</p>
-          <h1 id="hero-title" data-i18n="index.hero.title">Ich baue, teste und sichere Software mit AI im Maschinenraum.</h1>
-          <p class="under-construction" data-i18n="index.hero.underConstruction">+++ Diese Homepage ist permanent im Umbau +++</p>
+          <h1 id="hero-title" data-i18n="index.hero.title">Toni Gansel</h1>
+          <p class="hero-role" data-i18n="index.hero.role">Test Engineer fuer Sicherheit, Performance &amp; AI-gestuetzte Automatisierung</p>
           <p class="hero-copy" data-i18n="index.hero.copy">
-            Ich arbeite viel mit Claude Code und Codex, verbinde klassische
-            Software-Qualitaet mit Security Thinking und mache AI-gestuetzte
-            Entwicklung praktisch, pruefbar und kontrollierbar.
+            Ich verbinde technische Umsetzung mit strategischem Qualitaetsmanagement,
+            arbeite in agilen, interdisziplinaeren Teams und baue schlanke,
+            risikoorientierte Testprozesse mit hohem Automatisierungsgrad.
           </p>
+          <ul class="focus-chips" aria-label="Schwerpunkte">
+            <li data-i18n="index.hero.chip1">Application Security</li>
+            <li data-i18n="index.hero.chip2">Performance &amp; Last</li>
+            <li data-i18n="index.hero.chip3">Teststrategie</li>
+            <li data-i18n="index.hero.chip4">Risikobasiertes Testen</li>
+            <li data-i18n="index.hero.chip5">Threat Modeling</li>
+            <li data-i18n="index.hero.chip6">CI/CD-Automatisierung</li>
+          </ul>
           <div class="hero-actions" aria-label="Kontaktoptionen">
-            <a class="button primary" href="https://de.linkedin.com/in/toni-gansel-814813245" data-i18n="index.hero.ctaPrimary">Auf LinkedIn Kontakt aufnehmen</a>
-            <a class="button secondary" href="articles.html" data-i18n="index.hero.ctaSecondary">Artikel lesen</a>
+            <a class="button primary" href="https://de.linkedin.com/in/toni-gansel-814813245">LinkedIn</a>
+            <a class="button secondary" href="https://github.com/t0nigansel">GitHub</a>
           </div>
         </div>
       </section>
 
+      <p class="under-construction" data-i18n="index.hero.underConstruction" style="display:block;width:min(980px,calc(100% - 18px));margin:0 auto 12px;">+++ Diese Homepage ist permanent im Umbau +++</p>
+
       <section class="section vitals" id="fakten" aria-label="Fakten">
         <div>
           <p class="section-kicker" data-i18n="index.facts.kicker">Fakten</p>
-          <h2 data-i18n="index.facts.h2">Auf einen Blick.</h2>
+          <h2 data-i18n="index.facts.h2">Auf einen Blick</h2>
         </div>
         <dl class="facts">
           <div>
@@ -133,7 +143,7 @@
           </div>
           <div>
             <dt data-i18n="index.facts.available.dt">Verfuegbar</dt>
-            <dd data-i18n="index.facts.available.dd">ab in 3 Monaten</dd>
+            <dd data-i18n="index.facts.available.dd">ab September 2026</dd>
           </div>
           <div>
             <dt data-i18n="index.facts.contact.dt">Kontakt</dt>
@@ -142,17 +152,51 @@
         </dl>
       </section>
 
+      <!-- ============ GREATEST HITS ============ -->
+      <section class="section greatest-hits" id="greatest-hits">
+        <h2 data-i18n="index.hits.h2">&gt;&gt;&gt; Systeme, die nicht ausfallen duerfen &lt;&lt;&lt;</h2>
+        <p class="subtitle">
+          <marquee behavior="alternate" scrollamount="3" data-i18n="index.hits.subtitle">
+            *** Kritische Infrastruktur. Echte Last. Echte Konsequenzen. ***
+          </marquee>
+        </p>
+
+        <div class="table-wrap">
+          <table class="hits" border="1" cellpadding="6" cellspacing="0">
+            <tr>
+              <th data-i18n="index.hits.th.system">System</th>
+              <th data-i18n="index.hits.th.carries">Was es traegt</th>
+              <th data-i18n="index.hits.th.did">Was ich gemacht habe</th>
+            </tr>
+            <tr>
+              <td><b>Elektronische Patientenakte (ePA)</b></td>
+              <td data-i18n="index.hits.row1.carries">Gesundheitsdaten aller gesetzlich Versicherten in DE</td>
+              <td data-i18n="index.hits.row1.did">Last- und Performancetests (JMeter, Kubernetes, Prometheus/Grafana)</td>
+            </tr>
+            <tr>
+              <td><b>Cell Broadcast</b></td>
+              <td data-i18n="index.hits.row2.carries">Bundesweites Warnsystem fuer Katastrophen und Gefahrenlagen</td>
+              <td data-i18n="index.hits.row2.did">Test Manager: Validierung der XML-Transformationen unter grossen Datenmengen, Tests mit fehlenden, manipulierten und typfremden Werten</td>
+            </tr>
+            <tr>
+              <td><b>ALLEGRO</b></td>
+              <td data-i18n="index.hits.row3.carries">Berechnung der Grundsicherung (ALG II) der Bundesagentur fuer Arbeit</td>
+              <td data-i18n="index.hits.row3.did">Tests zu Sicherheit, Performance, Usability und Barrierefreiheit</td>
+            </tr>
+          </table>
+        </div>
+
+        <p class="kunden">
+          <b data-i18n="index.hits.clientsLabel">Auftraggeber u.a.:</b>
+          Volkswagen &middot; Schulbehoerden Hamburg &amp; Schleswig-Holstein &middot;
+          Bundesagentur fuer Arbeit &middot; Deutsche Bundesbank
+        </p>
+      </section>
+
       <section class="section intro" id="leistungen">
         <div>
           <p class="section-kicker" data-i18n="index.services.kicker">Schwerpunkte</p>
-          <h2 data-i18n="index.services.h2">AI Engineering, Security und Qualitaet zusammen denken.</h2>
-          <p class="visitor-counter">
-            <span data-i18n="index.services.visitor">Sie sind Besucher Nr.</span>
-            <img
-              src="https://hits.sh/t0nigansel.github.io.svg?label=&color=ff00ff&labelColor=000000"
-              alt="Echter Besucherzaehler fuer diese Website"
-            >
-          </p>
+          <h2 data-i18n="index.services.h2">AI Engineering, Security und Qualitaet zusammen denken</h2>
         </div>
         <div class="service-grid">
           <article class="service-card">
@@ -190,7 +234,7 @@
         <div class="profile-layout">
           <div class="profile-copy">
             <p class="section-kicker" data-i18n="index.profile.kicker">Profil</p>
-            <h2 data-i18n="index.profile.h2">AI-naher Quality Engineer mit Security-Hintergrund.</h2>
+            <h2 data-i18n="index.profile.h2">AI-naher Quality Engineer mit Security-Hintergrund</h2>
             <p data-i18n="index.profile.p">
               Ich komme aus Softwareentwicklung, Test Engineering und Security Testing
               und arbeite heute stark an der Schnittstelle zu AI Engineering. Mich
@@ -201,15 +245,15 @@
           <dl class="facts">
             <div>
               <dt data-i18n="index.profile.focus.dt">Fokus</dt>
-              <dd data-i18n="index.profile.focus.dd">AI Engineering, Cybersecurity, Quality Engineering</dd>
+              <dd data-i18n="index.profile.focus.dd">Dort, wo Softwareentwicklung, Security und Qualitaet zusammenlaufen: Secure SDLC, Application Security Testing, Threat Modeling, Performance Engineering, Testautomatisierung und der kontrollierte Einsatz von Coding Agents - mit Fokus auf Systeme, bei denen Fehler echte Folgen haben.</dd>
             </div>
             <div>
               <dt data-i18n="index.profile.tools.dt">Tools</dt>
-              <dd>Claude Code, Codex, Python, Java, OWASP ZAP, Burp Suite, Docker, Kubernetes, CI/CD</dd>
+              <dd data-i18n="index.profile.tools.dd">Schwerpunkt-Stack: Claude Code &amp; Codex, Python und Java, JMeter, OWASP ZAP &amp; Burp Suite, Selenium und Cypress, Docker/Kubernetes, GitLab CI/CD. Die komplette Toolliste steht im CV weiter unten.</dd>
             </div>
             <div>
               <dt data-i18n="index.profile.approach.dt">Arbeitsweise</dt>
-              <dd data-i18n="index.profile.approach.dd">risikobasiert, security-nah, automatisiert, AI-gestuetzt</dd>
+              <dd data-i18n="index.profile.approach.dd">Risikobasiert, security-nah, automatisiert und AI-gestuetzt. Ich beginne mit dem Risiko, nicht mit Tools - was kann ausfallen, was missbraucht werden, was muss messbar bleiben - und baue daraus schlanke Teststrategien, automatisierte Checks und nachvollziehbare Reports. AI bleibt pruefbar, reproduzierbar und verifizierbar.</dd>
             </div>
           </dl>
         </div>
@@ -218,7 +262,7 @@
       <section class="section cv-section" id="cv">
         <div>
           <p class="section-kicker" data-i18n="index.cv.kicker">Curriculum Vitae</p>
-          <h2 data-i18n="index.cv.h2">Grob genug fuers Web. Konkret genug fuer Vertrauen.</h2>
+          <h2 data-i18n="index.cv.h2">Grob genug fuers Web. Konkret genug fuer Vertrauen</h2>
           <p class="privacy-note" data-i18n="index.cv.intro">
             Mehr als zwei Jahrzehnte Praxis zwischen Entwicklung, Test Engineering,
             Security Testing und Automatisierung. Heute liegt mein Schwerpunkt dort,
@@ -282,51 +326,55 @@
         </div>
       </section>
 
-      <!-- ============ GREATEST HITS ============ -->
-      <section class="section greatest-hits" id="greatest-hits">
-        <h2 data-i18n="index.hits.h2">&gt;&gt;&gt; Systeme, die nicht ausfallen duerfen &lt;&lt;&lt;</h2>
-        <p class="subtitle">
-          <marquee behavior="alternate" scrollamount="3" data-i18n="index.hits.subtitle">
-            *** Kritische Infrastruktur. Echte Last. Echte Konsequenzen. ***
-          </marquee>
-        </p>
-
-        <div class="table-wrap">
-          <table class="hits" border="1" cellpadding="6" cellspacing="0">
-            <tr>
-              <th data-i18n="index.hits.th.system">System</th>
-              <th data-i18n="index.hits.th.carries">Was es traegt</th>
-              <th data-i18n="index.hits.th.did">Was ich gemacht habe</th>
-            </tr>
-            <tr>
-              <td><b>Elektronische Patientenakte (ePA)</b></td>
-              <td data-i18n="index.hits.row1.carries">Gesundheitsdaten aller gesetzlich Versicherten in DE</td>
-              <td data-i18n="index.hits.row1.did">Last- und Performancetests (JMeter, Kubernetes, Prometheus/Grafana)</td>
-            </tr>
-            <tr>
-              <td><b>Cell Broadcast</b></td>
-              <td data-i18n="index.hits.row2.carries">Bundesweites Warnsystem fuer Katastrophen und Gefahrenlagen</td>
-              <td data-i18n="index.hits.row2.did">Test Manager: Validierung der XML-Transformationen unter grossen Datenmengen, Tests mit fehlenden, manipulierten und typfremden Werten</td>
-            </tr>
-            <tr>
-              <td><b>ALLEGRO</b></td>
-              <td data-i18n="index.hits.row3.carries">Berechnung der Grundsicherung (ALG II) der Bundesagentur fuer Arbeit</td>
-              <td data-i18n="index.hits.row3.did">Tests zu Sicherheit, Performance, Usability und Barrierefreiheit</td>
-            </tr>
-          </table>
+      <!-- ============ TIMELINE ============ -->
+      <section class="section timeline-section" id="werdegang">
+        <div>
+          <p class="section-kicker" data-i18n="index.timeline.kicker">Werdegang</p>
+          <h2 data-i18n="index.timeline.h2">Stationen, kurz und ehrlich</h2>
         </div>
-
-        <p class="kunden">
-          <b data-i18n="index.hits.clientsLabel">Auftraggeber u.a.:</b>
-          Volkswagen &middot; Schulbehoerden Hamburg &amp; Schleswig-Holstein &middot;
-          Bundesagentur fuer Arbeit &middot; Deutsche Bundesbank
-        </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-period" data-i18n="index.timeline.item1.period">2026&ndash;heute</span>
+            <span class="timeline-company">SPIRIT-TESTING Software &amp; Services GmbH</span>
+            <span class="timeline-desc" data-i18n="index.timeline.item1.desc">Test Engineer - Softwareentwicklung mit AI-Tools, Sicherheits- und Lasttests</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-period">2024&ndash;2026</span>
+            <span class="timeline-company">RISE GmbH</span>
+            <span class="timeline-desc" data-i18n="index.timeline.item2.desc">Test Engineer - Performance- und E2E-Tests verteilter Systeme, Lasttest-Frameworks auf Kubernetes, Mentoring</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-period">2018&ndash;2024</span>
+            <span class="timeline-company" data-i18n="index.timeline.freelance">Freiberufler</span>
+            <span class="timeline-desc" data-i18n="index.timeline.item3.desc">Test Engineer - risikobasierte Teststrategien, Security- und Lasttests, CI/CD-nahe Qualitaetssicherung</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-period">2013&ndash;2018</span>
+            <span class="timeline-company">Sogeti Deutschland</span>
+            <span class="timeline-desc" data-i18n="index.timeline.item4.desc">Test Engineer - Penetrations- und Regressionstests, Koordination von Testteams, Fachpublikationen</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-period">2012&ndash;2013</span>
+            <span class="timeline-company">ITC Automotive</span>
+            <span class="timeline-desc" data-i18n="index.timeline.item5.desc">Softwareentwickler - JEE-Entwicklung, Performance-Optimierung</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-period">2011&ndash;2012</span>
+            <span class="timeline-company">Corporate Planning</span>
+            <span class="timeline-desc" data-i18n="index.timeline.item6.desc">Test Engineer - Keyword-basierte Tests, manuelle Tests</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-period">2004&ndash;2006</span>
+            <span class="timeline-company">Logica CMG</span>
+            <span class="timeline-desc" data-i18n="index.timeline.item7.desc">Softwareentwickler - JEE-Entwicklung, Build-Automatisierung, Serveradministration</span>
+          </div>
+        </div>
       </section>
 
       <section class="section split" id="zertifikate">
         <div>
           <p class="section-kicker" data-i18n="index.certsTeaser.kicker">Zertifizierungen</p>
-          <h2 data-i18n="index.certsTeaser.h2">AI, Security, Testing und ein bisschen Papierkrieg.</h2>
+          <h2 data-i18n="index.certsTeaser.h2">AI, Security, Testing und ein bisschen Papierkrieg</h2>
         </div>
         <div class="article-list teaser-list">
           <p data-i18n="index.certsTeaser.p">
@@ -340,12 +388,12 @@
       <section class="section split article-teaser" id="artikel">
         <div>
           <p class="section-kicker" data-i18n="index.articlesTeaser.kicker">Artikel</p>
-          <h2 data-i18n="index.articlesTeaser.h2">Texte zu AI, Security, Gesellschaft und Softwarequalitaet.</h2>
+          <h2 data-i18n="index.articlesTeaser.h2">Texte zu AI, Security, Gesellschaft und Softwarequalitaet</h2>
         </div>
         <div class="article-list teaser-list">
           <p data-i18n="index.articlesTeaser.p">
-            Die komplette Linkliste liegt jetzt auf einer eigenen Seite: LinkedIn-Artikel,
-            Fachartikel-PDFs aus GitHub und alles, was irgendwo dazwischen passiert ist.
+            LinkedIn-Artikel, Fachartikel-PDFs und Fachpublikationen - bis zurueck in
+            die Sogeti-Zeit. Die komplette Liste liegt auf einer eigenen Seite.
           </p>
           <a class="button primary" href="articles.html" data-i18n="index.articlesTeaser.btn">Alle Artikel anzeigen</a>
         </div>
@@ -358,12 +406,13 @@
         </div>
         <div class="contact-actions">
           <p class="contact-copy" data-i18n="index.contact.p">
-            Fuer AI Engineering, Cybersecurity, Quality Engineering oder den
-            pragmatischen Einsatz von Claude Code und Codex freue ich mich ueber
-            eine Nachricht auf LinkedIn.
+            AI Engineering, Cybersecurity oder Quality Engineering? Schreib mir auf LinkedIn.
+          </p>
+          <p class="contact-copy" data-i18n="index.contact.availability">
+            Remote-first verfuegbar fuer Unternehmen in DE und EU.
           </p>
           <a class="button primary" href="https://de.linkedin.com/in/toni-gansel-814813245" data-i18n="index.contact.btnPrimary">Auf LinkedIn schreiben</a>
-          <a class="button secondary" href="https://github.com/t0nigansel">GitHub</a>
+          <a class="button secondary" href="https://github.com/t0nigansel" data-i18n="index.contact.btnGithub">GitHub-Projekte ansehen</a>
         </div>
       </section>
     </main>

@@ -284,40 +284,94 @@ h3 {
   font-size: 1.08rem;
 }
 
-.contact-band .section-kicker {
+.contact-band .section-kicker,
+.profile-layout .section-kicker {
   color: #000000;
 }
 
-.under-construction,
-.visitor-counter {
+.contact-band h2 {
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.hero-role {
+  margin: 0 0 14px;
+  color: #00ffff;
+  font-family: "Courier New", monospace;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.hero h1 {
+  text-align: left;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+}
+
+.hero-content {
+  align-self: center;
+}
+
+.focus-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.focus-chips li {
+  padding: 3px 8px;
+  color: #000;
+  background: #00ffff;
+  border: 2px solid #ff00ff;
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.timeline {
+  display: grid;
+  gap: 10px;
+}
+
+.timeline-item {
+  padding: 10px 12px;
+  background: #0d0d14;
+  border-left: 6px solid #ff00ff;
+  border-top: 2px groove #00ffff;
+  font-family: "Courier New", monospace;
+}
+
+.timeline-period {
+  display: inline-block;
+  margin-right: 10px;
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.timeline-company {
+  color: #ff00ff;
+  font-weight: bold;
+}
+
+.timeline-desc {
+  display: block;
+  margin-top: 4px;
+  color: #ffff00;
+}
+
+.under-construction {
   display: inline-block;
   padding: 6px 10px;
-  color: #000000;
+  color: #ffffff;
   background: repeating-linear-gradient(45deg, #ffff00 0 10px, #000000 10px 20px);
   border: 4px double #ff0000;
   font-family: "Courier New", monospace;
   font-weight: bold;
-}
-
-.under-construction {
-  color: #ffffff;
   text-shadow: 2px 2px 0 #000000;
-}
-
-.visitor-counter {
-  display: block;
-  max-width: max-content;
-  color: #00ff00;
-  background: #000000;
-  border-color: #00ff00;
-}
-
-.visitor-counter img {
-  display: inline-block;
-  height: 1.45rem;
-  margin-left: 0.35rem;
-  vertical-align: middle;
-  image-rendering: pixelated;
 }
 
 .hero-actions,
@@ -669,6 +723,13 @@ h3 {
   color: #ffff00;
   font-family: "Courier New", monospace;
   font-size: 0.92rem;
+}
+
+.cert-group-title {
+  margin: 26px 0 12px;
+  padding-bottom: 6px;
+  color: #00ff00;
+  border-bottom: 3px dashed #ff00ff;
 }
 
 .contact-band {
